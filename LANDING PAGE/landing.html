@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        /* Global Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header */
+        .header {
+            background-color: #ff4081;
+            color: white;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header img {
+            max-height: 50px;
+        }
+
+        .header nav {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .header nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .header .cta-button {
+            background: white;
+            color: #ff4081;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('your-hero-image.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 150px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        .hero .cta-button {
+            background: #ff4081;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+        }
+
+        /* Features Section */
+        .features {
+            display: flex;
+            justify-content: space-around;
+            background: linear-gradient(45deg, #ff4081, #ff8a80);
+            padding: 50px 0;
+            color: white;
+            text-align: center;
+        }
+
+        .feature-box {
+            max-width: 300px;
+        }
+
+        .feature-box h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .feature-box p {
+            font-size: 1rem;
+        }
+
+        /* About Section */
+        .about {
+            display: flex;
+            padding: 50px;
+            background: #f4f4f4;
+            align-items: center;
+        }
+
+        .about img {
+            max-width: 300px;
+            margin-right: 30px;
+        }
+
+        .about h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+
+        .about .cta-button {
+            background: #ff4081;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+        }
+
+        /* Services Section */
+        .services {
+            background-color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        .service-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 30px;
+        }
+
+        .service-box {
+            max-width: 300px;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .service-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .service-box h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #ff4081;
+        }
+
+        .service-box p {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .service-box a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #ff4081;
+            color: white;
+            border-radius: 50px;
+            text-decoration: none;
+        }
+
+        .service-box:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Footer */
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <img src="https://i.pinimg.com/originals/b3/05/75/b30575a11ffe62d8c9b43da30ee77fc1.jpg" alt="Logo">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Blog</a>
+            <a href="#">Services</a>
+            <a href="#">Testimonials</a>
+            <a href="#">Contact</a>
+        </nav>
+        <a href="#" class="cta-button">Request a Consult</a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Creative Digital Agency</h1>
+        <p>We provide the best solutions for your business</p>
+        <a href="#" class="cta-button">Read More</a>
+        <a href="#" class="cta-button">Request a Consult</a>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature-box">
+            <h3>Launching Business</h3>
+            <p>We help you start and grow your business.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Online Support Team</h3>
+            <p>24/7 support for all your needs.</p>
+        </div>
+        <div class="feature-box">
+            <h3>Time Management</h3>
+            <p>Effective strategies to save your time.</p>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about">
+        <img src="https://i.pinimg.com/originals/b3/05/75/b30575a11ffe62d8c9b43da30ee77fc1.jpg" alt="About Us">
+        <div>
+            <h2>About Us</h2>
+            <p>15 years, we passionate about achieving better results for our clients.</p>
+            <p>At Our Company,we are passionate about delivering innovative solutions that drive success for our clients. With over 15 years of experience in the industry, we have built a reputation for excellence and a commitment to customer satisfaction.</p>
+        <p>Our team of dedicated professionals brings a wealth of knowledge and expertise to every project. We specialize in Our specialties or services, e.g., web development, mobile app creation, digital marketing], ensuring that each solution is tailored to meet the unique needs of our clients.</p>
+        <p>We believe in the power of technology to transform businesses, and we are dedicated to helping our clients navigate the ever-evolving digital landscape. Our mission is to provide high-quality services that drive growth, improve efficiency, and deliver measurable results.</p>
+        <p>Whether you're a small startup or a large enterprise, we are here to help you achieve your goals. At Our Company, your success is our priority.</p>
+            <a href="#" class="cta-button">Read More</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-list">
+            <div class="service-box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/User-experience-diagram.png" alt="Service 1">
+                <h3>User Experience</h3>
+                <p>We provide the best user experience for your customers, ensuring that your platform is intuitive and engaging.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="service-box">
+                <img src="https://creativeteachered.org/wp-content/uploads/2019/10/fmf-nbm446A.jpg" alt="Service 2">
+                <h3>Creative Design</h3>
+                <p>Our designs are tailored to your specific needs, combining aesthetics with functionality.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="service-box">
+                <img src="https://marcusrandall.com/wp-content/uploads/2013/05/retina_ready_website_marcus_randall.png" alt="Service 3">
+                <h3>Retina Ready</h3>
+                <p>Our solutions are ready for high-resolution screens, delivering crisp and clear visuals on any device.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="service-box">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgm3yRg01UQNtvDZLQqppebtDw-l-CgcNulLQyg54yj3SkvRm0mky53e75TX3pcoyvpwymyCud6A_pys6bIeXr_1oHJcwLaFXPNbRwE1vDLJdTYATRZeusfej8-2hPnXVkCfNEM-NQH9a3gp9iK2a-xsLAyij-UJ1lSH0B4FORagajN6XjfsRT03f8i9w/s2000/1648113590-new4.jpg" alt="Service 4">
+                <h3>SEO Optimization</h3>
+                <p>Improve your search engine rankings and drive more traffic to your website with our expert SEO services.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="service-box">
+                <img src="https://dashwire.com/wp-content/uploads/2022/04/the-complete-guide-to-mobile-app-development-2021.png" alt="Service 5">
+                <h3>Mobile App Development</h3>
+                <p>We create mobile applications that are user-friendly, feature-rich, and compatible across all devices.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="service-box">
+                <img src="https://cloudsourcesys.com/images/cloud-solution.jpg" alt="Service 6">
+                <h3>Cloud Solutions</h3>
+                <p>Our cloud services offer scalable and secure solutions for your business, allowing for easy access and management.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Your Company Name. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>
