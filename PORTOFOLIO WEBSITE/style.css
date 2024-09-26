@@ -1,0 +1,196 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f5f7fa;
+    background-image: url('images/background-pattern.png'); /* Add a subtle pattern */
+    background-size: cover;
+}
+
+header {
+    background: linear-gradient(to right, #5a3fca, #2575fc); /* Enhanced gradient background */
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #ffcc00;
+    color: #333;
+}
+
+header .header-content h1 {
+    font-size: 4em;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+header .header-content p {
+    font-size: 1.7em;
+    font-weight: 300;
+}
+
+/* Section Styles */
+section {
+    padding: 70px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    margin-bottom: 50px;
+}
+
+section h2 {
+    font-size: 3em;
+    color: #2575fc;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: #ffcc00;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.about-content img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+    border: 5px solid #2575fc; /* Border for emphasis */
+}
+
+.about-content p {
+    max-width: 600px;
+    font-size: 1.2em;
+    line-height: 1.8;
+    text-align: left;
+    color: #555;
+}
+
+.skills ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+.skills li {
+    background-color: #6a11cb;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: transform 0.2s ease;
+}
+
+.skills li:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    background-color: #ffcc00;
+    color: #333;
+}
+
+/* Project and Resume Buttons */
+.demo-button, .resume-button {
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: #2575fc;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 20px;
+}
+
+.demo-button:hover, .resume-button:hover {
+    background-color: #ffcc00;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.demo-button:active, .resume-button:active {
+    transform: translateY(2px);
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    margin-top: 50px;
+    border-top: 5px solid #ffcc00; /* Accent color for the footer */
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .skills ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    header .header-content h1 {
+        font-size: 3em;
+    }
+
+    header .header-content p {
+        font-size: 1.2em;
+    }
+}
